@@ -35,4 +35,4 @@ A simple web application to track income and expenses with CRUD operations and l
 
 ## Live Demo
 
-[View Live Demo](your-netlify-url-here) 
+[View Live Demo](https://expenze-calculator.netlify.app/) 
