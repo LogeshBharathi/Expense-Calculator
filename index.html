@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Expense Calculator</h1>
+        
+        <!-- Summary Section -->
+        <div class="summary">
+            <div class="summary-item">
+                <h3>Total Income</h3>
+                <p id="totalIncome">₹0</p>
+            </div>
+            <div class="summary-item">
+                <h3>Total Expense</h3>
+                <p id="totalExpense">₹0</p>
+            </div>
+            <div class="summary-item">
+                <h3>Net Balance</h3>
+                <p id="netBalance">₹0</p>
+            </div>
+        </div>
+
+        <!-- Entry Form -->
+        <div class="entry-form">
+            <h2>Add New Entry</h2>
+            <form id="entryForm">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit" id="submitBtn">Add Entry</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </form>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h3>Filter Entries:</h3>
+            <div class="radio-group">
+                <input type="radio" id="all" name="filter" value="all" checked>
+                <label for="all">All</label>
+                
+                <input type="radio" id="income" name="filter" value="income">
+                <label for="income">Income</label>
+                
+                <input type="radio" id="expense" name="filter" value="expense">
+                <label for="expense">Expense</label>
+            </div>
+        </div>
+
+        <!-- Entries List -->
+        <div class="entries-list">
+            <h2>Entries</h2>
+            <div id="entriesList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
